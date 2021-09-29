@@ -1,0 +1,281 @@
+:root {
+    --white: rgb(255, 255, 255);
+    --grey: rgb(173, 173, 173);
+    --red-work: hsl(15, 100%, 70%);
+    --blue-play: hsl(195, 74%, 62%);
+    --red-study: hsl(348, 100%, 68%);
+    --lime-green-exercise: hsl(145, 58%, 55%);
+    --violet-social: hsl(264, 64%, 52%);
+    --soft-orange-self-care: hsl(43, 84%, 65%);
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --primary-blue: hsl(246, 80%, 60%);
+    --report-for-color: rgb(214, 214, 214);
+    --dark-blue: hsl(235, 46%, 20%);
+    --content-hover: hsl(237, 56%, 25%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-family: 'Rubik', sans-serif;
+}
+
+.active {
+    color: var(--white);
+}
+
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: auto;
+    color: whitesmoke;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
+
+.main-container {
+    /* height: 500px;  */
+    margin-top: 5%;
+    padding: 0 15%;
+    display: grid;
+    grid-template-columns: 23% 77%;
+}
+
+.icons {
+    float: right;
+    margin-right: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.card-body {
+    font-size: 2.5em;
+    margin: 20px 0 5px 0;
+}
+
+.card-footer {
+    margin: 0;
+    font-size: 12px;
+}
+
+.left {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.profile-header {
+    background-color: var(--primary-blue);
+    border-radius: 10px;
+    padding: 10%;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.profile-name {
+    margin-top: 5px;
+    color: var(--white);
+    font-size: 1.8em;
+}
+
+.report-for {
+    color: var(--report-for-color);
+    margin-bottom: 0;
+}
+
+.time {
+    display: grid;
+    background-color: hsl(235, 46%, 20%);
+    color: var(--grey);
+    padding: 10%;
+    border-radius: 10px;
+}
+
+.time>p {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.time>p:hover {
+    color: var(--white);
+}
+
+.profile-pic {
+    height: 100px;
+    width: 100px;
+    border: 4px solid var(--white);
+    border-radius: 55px;
+}
+
+.right {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 35px 25px;
+}
+
+.margin-wrapper {
+    margin: 12%;
+}
+
+.ellipsis {
+    margin-top: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+.current_prev {
+    display: grid;
+}
+
+.work {
+    background-color: var(--red-work);
+    border-radius: 20px 20px 30px 30px;
+    position: relative;
+}
+
+.play {
+    background-color: var(--blue-play);
+    border-radius: 20px 20px 30px 30px;
+    position: relative;
+}
+
+.study {
+    background-color: var(--red-study);
+    border-radius: 20px 20px 30px 30px;
+    position: relative;
+}
+
+.exercise {
+    background-color: var(--lime-green-exercise);
+    border-radius: 20px 20px 30px 30px;
+    position: relative;
+}
+
+.social {
+    background-color: var(--violet-social);
+    border-radius: 20px 20px 30px 30px;
+    position: relative;
+}
+
+.self-care {
+    background-color: var(--soft-orange-self-care);
+    border-radius: 20px 20px 30px 30px;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 25%;
+    height: 75%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.content:hover {
+    background-color: var(--content-hover);
+    cursor: pointer;
+}
+
+@media screen and (max-width:1300px) {
+    .main-container {
+        padding: 0 10%;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .main-container {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .main-container {
+        padding: 0 2%;
+    }
+    .card-body {
+        font-size: 1.2em;
+    }
+    .profile-name {
+        font-size: 1em;
+    }
+    .profile-pic {
+        height: 50px;
+        width: 50px;
+    }
+    .card-footer {
+        font-size: 10px;
+    }
+    .time>p {
+        font-size: 15px;
+        margin: 7px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .main-container {
+        grid-template-columns: auto;
+        column-gap: 20px;
+        padding: 0;
+    }
+    .icons {
+        height: 60px;
+        width: 60px;
+        margin-right: 10px;
+    }
+    .profile-header {
+        grid-template-columns: 30% 70%;
+        padding: 6% 5%;
+    }
+    .profile-pic {
+        height: 80px;
+        width: 80px;
+        text-align: center;
+    }
+    .profile-name {
+        margin-bottom: 0;
+        font-size: 1.6em;
+    }
+    .report-for {
+        margin: 0;
+    }
+    .time {
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        padding: 5%;
+    }
+    .right {
+        grid-template-columns: auto;
+        height: 1000px;
+    }
+    .margin-wrapper {
+        margin: 5%;
+    }
+    .card-body {
+        font-size: 35px;
+        margin: 0;
+    }
+    .card-footer {
+        margin-top: 5px;
+        margin-left: auto;
+        font-size: 15px;
+    }
+    .current_prev {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .profile-pic {
+        height: 60px;
+        width: 60px;
+    }
+}
