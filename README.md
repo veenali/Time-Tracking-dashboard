@@ -25,9 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop View](./screenshot1.jpg)
-[Mobile View](./screenshot2.jpg)
-(./screenshot3.jpg)
+![Desktop View](./screenshot1.jpg)
+![Mobile View](./screenshot2.jpg)
+![](./screenshot3.jpg)
 
 
 ### Links
