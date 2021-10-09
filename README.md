@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://veenali.github.io/Time-Tracking-dashboard/)
+- Live Site URL: [Site URL](https://veenali.github.io/Time-Tracking-dashboard/)
 
 ## My process
 
